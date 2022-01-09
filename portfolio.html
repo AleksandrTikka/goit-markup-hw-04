@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!--Шапка страницы-->
+    <header class="page-header">
+        <div class="container main-nav">
+            <nav class="navigation">
+                <a href="/" class="logo">
+                    Web<span class="header-logo">Studio</span>
+                </a>
+                <ul class="site-nav list">
+                    <li class="item">
+                        <a href="./index.html" class="link">Студия</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="link active">Портфолио</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link">38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Уникальный контент страницы-->
+    <main>
+        <section class="section portfolio">
+            <div class="container">
+                <ul class="filter list">
+                    <li class="item"><button type="button" class="button">Все</button></li>
+                    <li class="item"><button type="button" class="button">Веб-сайты</button></li>
+                    <li class="item"><button type="button" class="button">Приложения</button></li>
+                    <li class="item"><button type="button" class="button">Дизайн</button></li>
+                    <li class="item"><button type="button" class="button">Маркетинг</button></li>
+                </ul>
+                <h2 class="section-title">Примеры работ</h2>
+                <ul class="list type">
+                    <li class="item">
+                        <a href="" class="link">
+                            <img src="./images/technocrack.jpg" class="thumb" alt="Открытый ноутбук с сайтом-примером" width="370" />
+                        <div class="description"><h3 class="example">Технокряк</h3>
+                        <p class="text">Веб-сайт</p></div>                         
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link"><img src="./images/poster_new_orlean_vs_golden_star.jpg" class="thumb" alt="Дизайн постера" width="370" />
+                        <div class="description">
+                            <h3 class="example">Постер New Orlean vs Golden Star</h3>
+                            <p class="text">Дизайн</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/restaurant_seafood.jpg" class="thumb" alt="Логотип рыбного ресторана" width="370" />
+                        <div class="description">
+                            <h3 class="example">Ресторан Seafood</h3>
+                            <p class="text">Приложение</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/project_prime.jpg" class="thumb" alt="Наушники" width="370" />
+                        <div class="description">
+                            <h3 class="example">Проект Prime</h3>
+                            <p class="text">Маркетинг</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/project_boxes.jpg" class="thumb" alt="Две коробки" width="370" />
+                        <div class="description">
+                            <h3 class="example">Проект Boxes</h3>
+                            <p class="text">Приложение</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/inspiration_has_no_borders.jpg" class="thumb" alt="Монитор" width="370" />
+                        <div class="description">
+                            <h3 class="example">Inspiration has no Borders</h3>
+                            <p class="text">Веб-сайт</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/edition_limited_edition.jpg" class="thumb" alt="Открытый журнал" width="370" />
+                        <div class="description">
+                            <h3 class="example">Издание Limited Edition</h3>
+                            <p class="text">Дизайн</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/project_lab.jpg" class="thumb" alt="Лейба на веревке" width="370" />
+                        <div class="description">
+                            <h3 class="example">Проект LAB</h3>
+                            <p class="text">Маркетинг</p>
+                        </div></a>                        
+                    </li>
+                    <li class="item"><a href="" class="link"><img src="./images/growing_business.jpg" class="thumb" alt="Человек работает на ноутбуке" width="370" />
+                        <div class="description">
+                            <h3 class="example">Growing Business</h3>
+                            <p class="text">Приложение</p>
+                        </div></a>                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--Подвал страницы-->
+    <footer class="footer">
+        <div class="container">
+            <a href="/" class="logo">
+                <span>Web</span><span class="footer-logo">Studio</span>
+            </a>
+            <address>
+                <ul class="footer-list list">
+                    <li class="item"><a href="" class="link city">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="item"><a href="mailto:info@example.com" class="link mail">info@example.com</a></li>
+                    <li class="item"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
