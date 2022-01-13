@@ -127,6 +127,7 @@ body {
 
 .contacts .link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -143,6 +144,17 @@ body {
   background-image: url(../images/envelope_1.svg);
   width: 16px;
   height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.tel-header::before {
+  content: '';
+  margin-right: 10px;
+  background-image: url(../images/smartphone.svg);
+  width: 10px;
+  height: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -171,7 +183,18 @@ body {
 /* hero */
 
 .hero {
-  background-color: #2f303a;
+  min-width: 1600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img_hero.jpg);
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -229,15 +252,43 @@ body {
   text-align: center;
 }
 
-.benefits {
+.features-list {
   display: flex;
 }
 
-.benefits .item {
+.features-list .item {
   flex-basis: calc((100% -90px) / 4);
 }
 
-.benefits .item + .item {
+.features-list > .item::before {
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  height: 120px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
+}
+
+.features-list .item + .item {
   margin-left: 30px;
 }
 .section .title {
