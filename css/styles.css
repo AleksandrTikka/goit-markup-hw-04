@@ -430,7 +430,7 @@ body {
   background-color: #ffffff;
 }
 
-.team-link + .team-link {
+.team-social .item + .item {
   margin-left: 10px;
 }
 
@@ -456,49 +456,39 @@ body {
 }
 
 .clients-item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-color);
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .clients-item + .item {
   margin-left: 30px;
 }
 .link-clients {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 106px;
-  height: 60px;
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .clients-icon {
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.link-clients:hover,
+.link-clients:focus {
   border-color: var(--accent-color);
 }
 
-/*.clients-icon:hover,
-.clients-item .link-clients:focus .clients-icon {
-  border: 1px solid var(--accent-color);
-}*/
-
-/*.clients-icon:hover,*/
 .clients-item:hover .clients-icon,
-/*.clients-icon:focus,*/
-.clients-item:focus .clients-icon, 
-.clients-item .link-clients:focus .clients-icon {
+.clients-item:focus .clients-icon,
+.link-clients:focus .clients-icon {
   fill: var(--icon-accent);
-  color: var(--accent-color);
 }
 /*Страница портфолио*/
 
@@ -629,7 +619,10 @@ body {
 
 .footer-area {
   display: flex;
-  align-items: baseline;
+}
+
+.column-second {
+  margin-top: 12px;
 }
 
 .footer-area .column + .column {
@@ -673,7 +666,7 @@ body {
 .column-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
   text-transform: uppercase;
 
